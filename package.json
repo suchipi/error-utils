@@ -18,6 +18,7 @@
   "author": "Lily Skye <me@suchipi.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.11.30",
     "prettier": "^3.2.5",
     "typescript": "^5.4.3",
     "vitest": "^1.4.0"

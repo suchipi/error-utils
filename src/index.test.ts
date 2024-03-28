@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
-import * as mod from "../dist/index";
 
 test("exports", () => {
+  const mod = require("../dist/index");
   expect(mod).toMatchInlineSnapshot(`
     {
       "ParsedError": [Function],
