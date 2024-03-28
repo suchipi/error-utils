@@ -31,5 +31,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suchipi/error-utils.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
