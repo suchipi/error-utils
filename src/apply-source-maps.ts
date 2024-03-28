@@ -38,6 +38,18 @@ export type SourceMap = {
   file?: string;
 };
 
+function getSourceMapForFilename(
+  sourceMaps: { [filename: string]: SourceMap },
+  filename: string,
+): SourceMap | null {
+  return (
+    sourceMaps[filename] ??
+    sourceMaps["file://" + filename] ??
+    sourceMaps[filename.replace(/^file:\/\//, "")] ??
+    null
+  );
+}
+
 /** Returns a new ParsedError. */
 export function applySourceMapsToParsedError(
   sourceMaps: { [filename: string]: SourceMap },
@@ -48,9 +60,8 @@ export function applySourceMapsToParsedError(
   for (const frame of output.stackFrames) {
     if (frame.fileName) {
       if (frame.lineNumber) {
-        if (sourceMaps[frame.fileName] != null) {
-          const map = sourceMaps[frame.fileName];
-
+        const map = getSourceMapForFilename(sourceMaps, frame.fileName);
+        if (map != null) {
           const consumer = new SourceMapConsumer(map as any);
 
           const pos = consumer.originalPositionFor({

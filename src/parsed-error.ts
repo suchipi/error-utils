@@ -24,10 +24,6 @@ export class ParsedError {
     }
   }
 
-  static fromError(error: Error): ParsedError {
-    return new ParsedError(error);
-  }
-
   static clone(other: ParsedError) {
     return new ParsedError({
       name: other.name,
@@ -45,7 +41,7 @@ export class ParsedError {
     const newFrameLines: Array<string> = [];
 
     for (const frame of stackFrames) {
-      let output = "  at ";
+      let output = "    at ";
 
       if (frame.isConstructor) {
         output += "new ";
@@ -91,7 +87,7 @@ export class ParsedError {
    * Create an Error (with V8-style `stack` string) from the provided
    * `ParsedError`.
    */
-  toError<ErrorType>(
+  toError<ErrorType = Error>(
     // @ts-ignore could be instantiated with different subtype
     ErrorConstructor: { new (message: string): ErrorType } = Error,
   ): ErrorType {

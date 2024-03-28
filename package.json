@@ -4,7 +4,8 @@
   "description": "utils for parsing error stacks, apply source maps to errors, etc",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "test": "vitest"
   },
   "keywords": [
     "error",
@@ -18,7 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
   },
   "dependencies": {
     "error-stack-parser": "^2.1.4",
