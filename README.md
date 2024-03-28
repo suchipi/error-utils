@@ -10,6 +10,8 @@ Node.js utils for parsing error stacks, applying source maps to error stacks, et
 - `applySourceMapsToParsedError` function
   - updates the line/column numbers on the stack frames of a ParsedError by using source maps
   - returns a new ParsedError
+- `applySourceMapsToStackFrame` function
+  - same as above but for a single StackFrame
 - `getStackFrame` function
   - given a stack offset number, gets a `StackFrame` instance from the current callstack.
   - offset of `0` gives the call to `getStackFrame`.

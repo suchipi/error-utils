@@ -6,6 +6,7 @@ test("exports", () => {
     {
       "ParsedError": [Function],
       "applySourceMapsToParsedError": [Function],
+      "applySourceMapsToStackFrame": [Function],
       "getStackFrame": [Function],
       "isError": [Function],
     }
