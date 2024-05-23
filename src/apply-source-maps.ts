@@ -6,7 +6,7 @@ export type SourceMap = {
   /**
    * Which version of the source map spec this map is following.
    */
-  version: number;
+  version: string;
 
   /**
    * An array of URLs to the original source files.

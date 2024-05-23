@@ -21,6 +21,7 @@
     "@types/node": "^20.11.30",
     "prettier": "^3.2.5",
     "typescript": "^5.4.3",
+    "typescript-assert-utils": "^1.1.0",
     "vitest": "^1.4.0"
   },
   "dependencies": {
