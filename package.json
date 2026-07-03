@@ -4,7 +4,7 @@
   "description": "utils for parsing error stacks, apply source maps to errors, etc",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc && rm -rf dist/*.test.*",
     "test": "vitest"
   },
   "keywords": [
