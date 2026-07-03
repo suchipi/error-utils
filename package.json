@@ -18,10 +18,12 @@
   "author": "Lily Skye <me@suchipi.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@swc/core": "^1.15.43",
     "@types/node": "^20.11.30",
     "prettier": "^3.9.4",
     "typescript": "^5.4.3",
-    "typescript-assert-utils": "^1.1.0",
+    "typescript-assert-utils": "^1.2.0",
     "vitest": "^4.1.9"
   },
   "dependencies": {
