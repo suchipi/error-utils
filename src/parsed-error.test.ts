@@ -16,64 +16,48 @@ test("constructor - Error argument", () => {
         "source": "    at /Users/suchipi/Code/error-utils/src/parsed-error.test.ts:5:17",
       },
       {
-        "columnNumber": 14,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js",
-        "lineNumber": 135,
-        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:135:14",
+        "columnNumber": 11,
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "lineNumber": 302,
+        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11",
       },
       {
         "columnNumber": 26,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js",
-        "lineNumber": 60,
-        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:60:26",
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "lineNumber": 1903,
+        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26",
       },
       {
-        "columnNumber": 17,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js",
-        "functionName": "runTest",
-        "lineNumber": 767,
-        "source": "    at runTest (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:767:17)",
+        "columnNumber": 20,
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "lineNumber": 2326,
+        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20",
       },
       {
-        "columnNumber": 15,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js",
-        "functionName": "runSuite",
-        "lineNumber": 895,
-        "source": "    at runSuite (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:895:15)",
+        "columnNumber": 10,
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "functionName": "runWithCancel",
+        "lineNumber": 2323,
+        "source": "    at runWithCancel (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)",
       },
       {
-        "columnNumber": 5,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js",
-        "functionName": "runFiles",
-        "lineNumber": 944,
-        "source": "    at runFiles (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:944:5)",
+        "columnNumber": 20,
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "lineNumber": 2305,
+        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20",
       },
       {
-        "columnNumber": 3,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js",
-        "functionName": "startTests",
-        "lineNumber": 953,
-        "source": "    at startTests (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:953:3)",
+        "columnNumber": 10,
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "functionName": "runWithTimeout",
+        "lineNumber": 2272,
+        "source": "    at runWithTimeout (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)",
       },
       {
-        "columnNumber": 7,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js",
-        "lineNumber": 114,
-        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js:114:7",
-      },
-      {
-        "columnNumber": 5,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js",
-        "functionName": "withEnv",
-        "lineNumber": 82,
-        "source": "    at withEnv (file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js:82:5)",
-      },
-      {
-        "columnNumber": 3,
-        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js",
-        "functionName": "run",
-        "lineNumber": 103,
-        "source": "    at run (file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js:103:3)",
+        "columnNumber": 64,
+        "fileName": "file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js",
+        "lineNumber": 2955,
+        "source": "    at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2955:64",
       },
     ]
   `);
@@ -110,16 +94,14 @@ test("stack", () => {
 
   expect(parsedError.stack).toMatchInlineSnapshot(`
     "Error: hi
-        at /Users/suchipi/Code/error-utils/src/parsed-error.test.ts:108:17
-        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:135:14
-        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:60:26
-        at runTest (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:767:17)
-        at runSuite (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:895:15)
-        at runFiles (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:944:5)
-        at startTests (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/index.js:953:3)
-        at file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js:114:7
-        at withEnv (file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js:82:5)
-        at run (file:///Users/suchipi/Code/error-utils/node_modules/vitest/dist/chunks/runtime-runBaseTests.SKlFOhuq.js:103:3)"
+        at /Users/suchipi/Code/error-utils/src/parsed-error.test.ts:92:17
+        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11
+        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26
+        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20
+        at runWithCancel (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)
+        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20
+        at runWithTimeout (file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)
+        at file:///Users/suchipi/Code/error-utils/node_modules/@vitest/runner/dist/chunk-artifact.js:2955:64"
   `);
 });
 
@@ -132,7 +114,10 @@ test("toError (no constructor argument)", () => {
 
   expect(newError.name).toBe(error.name);
   expect(newError.message).toBe(error.message);
-  expect(newError.stack).toBe(error.stack);
+  expect(newError.stack).toBe(
+    // It strips these out, but that's fine
+    error.stack?.replaceAll(/\n\s+at new Promise \(<anonymous>\)/g, ""),
+  );
 });
 
 test("toError (with constructor argument)", () => {
@@ -145,5 +130,8 @@ test("toError (with constructor argument)", () => {
 
   expect(newError.name).toBe(error.name);
   expect(newError.message).toBe(error.message);
-  expect(newError.stack).toBe(error.stack);
+  expect(newError.stack).toBe(
+    // It strips these out, but that's fine
+    error.stack?.replaceAll(/\n\s+at new Promise \(<anonymous>\)/g, ""),
+  );
 });

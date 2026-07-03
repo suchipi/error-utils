@@ -46,9 +46,9 @@ test("getStackFrame", () => {
     {
       "columnNumber": 16,
       "fileName": "/Users/suchipi/Code/error-utils/src/get-stack-frame.ts",
-      "functionName": "Module.getStackFrame",
+      "functionName": "getStackFrame",
       "lineNumber": 5,
-      "source": "    at Module.getStackFrame (/Users/suchipi/Code/error-utils/src/get-stack-frame.ts:5:16)",
+      "source": "    at getStackFrame (/Users/suchipi/Code/error-utils/src/get-stack-frame.ts:5:16)",
     }
   `);
 });
